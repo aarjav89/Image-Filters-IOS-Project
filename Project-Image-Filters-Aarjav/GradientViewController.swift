@@ -1,27 +1,26 @@
 //
-//  ViewController.swift
+//  GradientViewController.swift
 //  Project-Image-Filters-Aarjav
 //
-//  Created by Aarjav on 5/26/20.
+//  Created by Aarjav on 6/4/20.
 //  Copyright © 2020 Aarjav. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class GradientViewController: UIViewController {
 
-   let backgroundImageView = UIImageView()
-
+    let backgroundImageView = UIImageView()
+    
     @IBOutlet weak var ImgView: UIImageView!
-    
-    @IBOutlet weak var EffectRadius: UISlider!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "My Image Filters"
+        self.title = "Posterize"
         setBackground()
+        setGamma()
+
+        // Do any additional setup after loading the view.
     }
-    
     
     func setBackground() {
         view.addSubview(backgroundImageView)
@@ -35,5 +34,21 @@ class ViewController: UIViewController {
         view.sendSubviewToBack(backgroundImageView)
     }
 
-}
+      func setGamma(){
+                
+        let filter = CIFilter(name: "CIColorPosterize")
+        filter!.setValue(CIImage(image: ImgView.image!), forKey: kCIInputImageKey)
+       
+        
+        
+        
+        let context = CIContext(options:nil)
+         let output = filter!.outputImage
+        let cgimg = context.createCGImage(output!, from: output!.extent)
+        let processedImage = UIImage(cgImage: cgimg!)
+            ImgView.image = processedImage
+        
+        
+    }
 
+}

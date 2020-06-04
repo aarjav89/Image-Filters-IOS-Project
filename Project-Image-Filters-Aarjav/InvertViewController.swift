@@ -1,27 +1,26 @@
 //
-//  ViewController.swift
+//  InvertViewController.swift
 //  Project-Image-Filters-Aarjav
 //
-//  Created by Aarjav on 5/26/20.
+//  Created by Aarjav on 6/4/20.
 //  Copyright © 2020 Aarjav. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
-   let backgroundImageView = UIImageView()
+class InvertViewController: UIViewController {
+    
+    let backgroundImageView = UIImageView()
 
     @IBOutlet weak var ImgView: UIImageView!
-    
-    @IBOutlet weak var EffectRadius: UISlider!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "My Image Filters"
+        self.title = "Invert"
         setBackground()
+        setInvert()
+
+        // Do any additional setup after loading the view.
     }
-    
     
     func setBackground() {
         view.addSubview(backgroundImageView)
@@ -34,6 +33,18 @@ class ViewController: UIViewController {
         backgroundImageView.image = UIImage(named: "blue1")
         view.sendSubviewToBack(backgroundImageView)
     }
+    
+    func setInvert(){
+        let filter = CIFilter(name: "CIColorInvert")
+        filter!.setValue(CIImage(image: ImgView.image!), forKey: kCIInputImageKey)
+        
+        let context = CIContext(options:nil)
+         let output = filter!.outputImage
+        let cgimg = context.createCGImage(output!, from: output!.extent)
+        let processedImage = UIImage(cgImage: cgimg!)
+            ImgView.image = processedImage
+    }
+
+   
 
 }
-

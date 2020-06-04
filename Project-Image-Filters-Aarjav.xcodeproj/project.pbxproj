@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA32D299247F1D4300E5D562 /* BlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32D298247F1D4300E5D562 /* BlurViewController.swift */; };
+		EA32D29B247F1D5900E5D562 /* SepiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32D29A247F1D5900E5D562 /* SepiaViewController.swift */; };
+		EA768D71248709A7007A16AC /* MonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA768D70248709A7007A16AC /* MonoViewController.swift */; };
+		EA768D7324871010007A16AC /* VintageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA768D7224871010007A16AC /* VintageViewController.swift */; };
 		EAA57E68247D8476000CF4A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA57E67247D8476000CF4A1 /* AppDelegate.swift */; };
 		EAA57E6A247D8476000CF4A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA57E69247D8476000CF4A1 /* SceneDelegate.swift */; };
 		EAA57E6C247D8476000CF4A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA57E6B247D8476000CF4A1 /* ViewController.swift */; };
 		EAA57E6F247D8476000CF4A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA57E6D247D8476000CF4A1 /* Main.storyboard */; };
 		EAA57E71247D8479000CF4A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA57E70247D8479000CF4A1 /* Assets.xcassets */; };
 		EAA57E74247D8479000CF4A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA57E72247D8479000CF4A1 /* LaunchScreen.storyboard */; };
+		EAA57E7D247D86BE000CF4A1 /* MyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA57E7C247D86BE000CF4A1 /* MyButtonStyle.swift */; };
+		EAFAAD9824898D7F002F7048 /* InvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAAD9724898D7F002F7048 /* InvertViewController.swift */; };
+		EAFAAD9A24899099002F7048 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAAD9924899099002F7048 /* GradientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA32D298247F1D4300E5D562 /* BlurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewController.swift; sourceTree = "<group>"; };
+		EA32D29A247F1D5900E5D562 /* SepiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaViewController.swift; sourceTree = "<group>"; };
+		EA768D70248709A7007A16AC /* MonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoViewController.swift; sourceTree = "<group>"; };
+		EA768D7224871010007A16AC /* VintageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageViewController.swift; sourceTree = "<group>"; };
 		EAA57E64247D8476000CF4A1 /* Project-Image-Filters-Aarjav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-Image-Filters-Aarjav.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA57E67247D8476000CF4A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAA57E69247D8476000CF4A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,9 @@
 		EAA57E70247D8479000CF4A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA57E73247D8479000CF4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAA57E75247D8479000CF4A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA57E7C247D86BE000CF4A1 /* MyButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButtonStyle.swift; sourceTree = "<group>"; };
+		EAFAAD9724898D7F002F7048 /* InvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertViewController.swift; sourceTree = "<group>"; };
+		EAFAAD9924899099002F7048 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		EAA57E66247D8476000CF4A1 /* Project-Image-Filters-Aarjav */ = {
 			isa = PBXGroup;
 			children = (
+				EAA57E7B247D8558000CF4A1 /* CustomViews */,
 				EAA57E67247D8476000CF4A1 /* AppDelegate.swift */,
 				EAA57E69247D8476000CF4A1 /* SceneDelegate.swift */,
 				EAA57E6B247D8476000CF4A1 /* ViewController.swift */,
@@ -63,8 +78,22 @@
 				EAA57E70247D8479000CF4A1 /* Assets.xcassets */,
 				EAA57E72247D8479000CF4A1 /* LaunchScreen.storyboard */,
 				EAA57E75247D8479000CF4A1 /* Info.plist */,
+				EA32D298247F1D4300E5D562 /* BlurViewController.swift */,
+				EA32D29A247F1D5900E5D562 /* SepiaViewController.swift */,
+				EA768D70248709A7007A16AC /* MonoViewController.swift */,
+				EA768D7224871010007A16AC /* VintageViewController.swift */,
+				EAFAAD9724898D7F002F7048 /* InvertViewController.swift */,
+				EAFAAD9924899099002F7048 /* GradientViewController.swift */,
 			);
 			path = "Project-Image-Filters-Aarjav";
+			sourceTree = "<group>";
+		};
+		EAA57E7B247D8558000CF4A1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				EAA57E7C247D86BE000CF4A1 /* MyButtonStyle.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +168,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA57E6C247D8476000CF4A1 /* ViewController.swift in Sources */,
+				EAA57E7D247D86BE000CF4A1 /* MyButtonStyle.swift in Sources */,
+				EAFAAD9A24899099002F7048 /* GradientViewController.swift in Sources */,
 				EAA57E68247D8476000CF4A1 /* AppDelegate.swift in Sources */,
+				EA768D7324871010007A16AC /* VintageViewController.swift in Sources */,
+				EAFAAD9824898D7F002F7048 /* InvertViewController.swift in Sources */,
+				EA32D299247F1D4300E5D562 /* BlurViewController.swift in Sources */,
 				EAA57E6A247D8476000CF4A1 /* SceneDelegate.swift in Sources */,
+				EA32D29B247F1D5900E5D562 /* SepiaViewController.swift in Sources */,
+				EA768D71248709A7007A16AC /* MonoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
